@@ -22,5 +22,11 @@ def sendemail():
 
         #Set your credentials (note: security here , do not upload your passwords to GitHub lol)
 
-yourEmail = 
-yourPassword = 
+yourEmail = "j.cheyenne.hohman@gmail.com"
+yourPassword = "############"
+
+#login to gmail 
+server smtplib.SMTP('smtp.gmail.com', 587) 
+server.ehlo()
+server.starttls()
+server.login(yourEmail, yourPassword)
